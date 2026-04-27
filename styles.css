@@ -1,0 +1,141 @@
+:root {
+    --color_1: #F5C044;
+    --color_2: #4CA154;
+    --color_3: #18181B;
+    --color_4: #52525A;
+    --color_5: #D4D4D8;
+    --color_6: #FAFAF9;
+    --color_7: #FFFFFF;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--color_5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 80%;
+    height: 90%;
+    background: var(--color_6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_item {
+    width: 50%;
+    height: 100%;
+    padding: 0 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.star_icon {
+    width: 24px;
+    height: auto;
+    background: var(--color_1);
+    border-radius: 100px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.title {
+    color: var(--color_3);
+    font-size: 2.25rem;
+}
+
+.desc {
+    color: var(--color_4);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.check_list {
+    list-style: none;
+}
+
+.check_item {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check_text {
+    font-size: 0.875rem;
+    color: var(--color_4);
+}
+
+.card_testimonial {
+    width: 88%;
+    height: auto;
+    background: var(--color_7);
+    padding: 20px;
+    box-shadow: 0px 2px 6px var(--color_5);
+    position: relative;
+    margin: 20px 0;
+}
+
+.card_testimonial:first-child {
+    left: 20%;
+}
+
+.card_testimonial:last-child {
+    right: 20%;
+}
+
+.card_testimonial_header {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand_icon {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.stars_container {
+    width: auto;
+    width: 55%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    color: var(--color_3);
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.user_testimonial {
+    color: var(--color_4);
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
